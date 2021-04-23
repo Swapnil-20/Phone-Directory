@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://thymeleaf.org">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+            color: #404040;
+            background: #0ca3d2;
+        }
+        .container {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+        }
+        button a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+        button{
+            background-color: #FF335B;
+            color: white;
+            text-decoration: none;
+            height: 60px;
+            width: 150px;
+            font-size: 15px;
+            border: none;
+        }
+        button:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <button><a th:href="@{/users/login}"><span class="link">Login</span> &ensp;&ensp;</a></button>
+        <button><a th:href="@{/users/registration}"><span class="link">SignUp</span> &ensp;&ensp;</a></button>
+</div>
+</body>
+</html>
